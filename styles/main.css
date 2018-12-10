@@ -1,11 +1,17 @@
 @font-face {
-  font-family: TripAdvisor_Regular;
-  src: url('fonts/TripAdvisor_Regular.ttf') format('truetype');
+  font-family: 'TripAdvisor_Regular';
+  src: url('../fonts/TripAdvisor_Regular.ttf') format('truetype');
+  font-style: normal;
 }
 
 * {
   box-sizing: border-box;
-  font-family: TripAdvisor_Regular, Arial, Helvetica, sans-serif;
+  font-family: 'TripAdvisor_Regular', Arial, Helvetica, sans-serif;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
 }
 
 body {
@@ -27,10 +33,11 @@ body {
     -webkit-font-smoothing: antialiased;
     position: relative;
     color: #02a680;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .inbox_icon::before {
-  content: '\e06b'
+  content: '\e06'
 }
 
 .trips_icon::before {
@@ -247,6 +254,9 @@ body {
   width: 100%;
 
 }
+
+
+
 .card {
     display: inline-block;
     width: 170px;
