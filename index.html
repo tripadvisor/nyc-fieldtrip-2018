@@ -5,17 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" media="screen" href="styles/main.css"/>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8fYp2rD4zaN57lJhJbl00n9RcR4F8XnM&callback=initMap" async defer></script>
-  <script type="text/javascript">
-    var map;
-
-    function initMap() {
-      map = new google.maps.Map(document.getElementById("map"), {
-        center: {lat: -34.397, lng: 150.644},
-        zoom: 8
-      });
-    }
-  </script>
+  <script src="https://ta-media.citymaps.io/lib/v1.1.4/citymaps.min.js"></script>
 </head>
 <body>
 
@@ -244,6 +234,9 @@
         <div id="map"></div>
     </div>
 </div>
-
+<script type="text/javascript">
+  var map = Leaflet.citymaps.map('map');
+  map.setView([41.8781, -87.6298], 13);
+</script>
 </body>
 </html>
