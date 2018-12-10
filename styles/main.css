@@ -251,7 +251,7 @@ body {
 }
 .card {
     display: inline-block;
-    width: 180px;
+    width: 170px;
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -260,7 +260,7 @@ body {
 }
 .cardBody {
    white-space: initial;
-   height: 110px;
+   height: 113px;
    text-overflow: ellipsis;
    overflow: hidden;
 }
