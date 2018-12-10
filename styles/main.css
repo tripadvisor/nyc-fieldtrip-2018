@@ -1,4 +1,4 @@
-@@font-face {
+@font-face {
   font-family: TripAdvisor_Regular;
   src: url('fonts/TripAdvisor_Regular.ttf') format('truetype');
 }
@@ -73,7 +73,7 @@ body {
     content:'\e091';
 }
 
-.down_arrow_icon:before {
+.down_arrow_icon::after {
   content: '\e03e';
 }
 
@@ -114,14 +114,14 @@ body {
 }
 
 .topnavItemSearchBar {
+  position: absolute;
   margin: 12px;
-  margin-right: 80px;
+  right: 0px;
   border: 2px solid #e5e5e5;
   height: 36px;
   width: 160px;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: flex-end;
 }
 
 .topnavItemSearchBarIcon {
