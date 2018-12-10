@@ -270,3 +270,14 @@ body {
 .cardBody p {
     margin-top: 0px;
 }
+
+.mapContainer {
+    max-width: 918px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#map {
+    max-width: 918px;
+    height: 300px;
+}
