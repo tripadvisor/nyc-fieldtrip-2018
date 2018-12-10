@@ -228,3 +228,45 @@ body {
   border-right: 1px solid #e5e5e5;
   position: absolute;
 }
+
+
+.container {
+    max-width: 918px;
+    height: 100%;    
+    position: relative;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.containerOuter { 
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+  
+}
+.card {
+    display: inline-block;
+    width: 180px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.card > img {
+    width: 100%;
+}
+.cardBody {
+   white-space: initial;
+   height: 110px;
+   text-overflow: ellipsis;
+   overflow: hidden;
+}
+.cardBody h5 {
+    margin-bottom: 5px;
+}
+.cardBody p {
+    margin-top: 0px;
+}
