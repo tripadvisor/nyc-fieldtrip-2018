@@ -1,11 +1,17 @@
-@@font-face {
-  font-family: TripAdvisor_Regular;
-  src: url('fonts/TripAdvisor_Regular.ttf') format('truetype');
+@font-face {
+  font-family: 'TripAdvisor_Regular';
+  src: url('../fonts/TripAdvisor_Regular.ttf') format('truetype');
+  font-style: normal;
 }
 
 * {
   box-sizing: border-box;
-  font-family: TripAdvisor_Regular, Arial, Helvetica, sans-serif;
+  font-family: 'TripAdvisor_Regular', Arial, Helvetica, sans-serif;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
 }
 
 body {
@@ -27,10 +33,11 @@ body {
     -webkit-font-smoothing: antialiased;
     position: relative;
     color: #02a680;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .inbox_icon::before {
-  content: '\e06b'
+  content: '\e06'
 }
 
 .trips_icon::before {
@@ -73,7 +80,7 @@ body {
     content:'\e091';
 }
 
-.down_arrow_icon:before {
+.down_arrow_icon::after {
   content: '\e03e';
 }
 
@@ -114,14 +121,14 @@ body {
 }
 
 .topnavItemSearchBar {
+  position: absolute;
   margin: 12px;
-  margin-right: 80px;
+  right: 0px;
   border: 2px solid #e5e5e5;
   height: 36px;
   width: 160px;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: flex-end;
 }
 
 .topnavItemSearchBarIcon {
@@ -247,6 +254,9 @@ body {
   width: 100%;
 
 }
+
+
+
 .card {
     display: inline-block;
     width: 170px;
